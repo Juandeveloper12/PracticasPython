@@ -20,3 +20,6 @@ print(df.isna().sum())                               # nulos por columna
 print(df.groupby("provincia")["total"].sum())        # ventas por provincia
 print(df.groupby("categoria")["total"].mean())       # ticket promedio por categoría
 print(df.groupby(df["fecha"].dt.year)["total"].sum())# ventas por año
+
+
+print(df[df["total"] > 1000])                        # ventas mayores a 1000
